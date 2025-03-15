@@ -37,7 +37,7 @@ function Signup() {
       });
   };
   return (
-    <div className="flex h-screen items-center justify-center ">
+    <div className="flex h-screen items-center justify-center container overflow-hidden">
       <div className="w-[600px]">
         <div className="modal-box">
           <form method="dialog" onSubmit={handleSubmit(onSubmit)}>

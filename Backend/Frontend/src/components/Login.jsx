@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
@@ -15,7 +16,7 @@ function Login() {
       password: data.password,
     };
     await axios
-      .post("https://bookheaven-sd2p.onrender.com/user/login", userInfo)
+      .post("https://bookheaven-sd2p.onrender.com/login", userInfo)
       .then((res) => {
         console.log(res.data);
         if (res.data) {
@@ -39,9 +40,9 @@ function Login() {
   };
   return (
     <div>
-      <dialog id="my_modal_3" className="modal">
+      <dialog id="my_modal_3" className="modal ">
         <div className="modal-box">
-          <form method="dialog" onSubmit={handleSubmit(onSubmit)}>
+          <form method="dialog" onSubmit={handleSubmit(onSubmit)} className="grid grid-cols-auto-fit">
             {/* if there is a button in form, it will close the modal */}
             <Link
               onClick={() =>
@@ -60,7 +61,7 @@ function Login() {
               <input
                 type="email"
                 placeholder="Enter Your Email"
-                className="w-80 px-3 py-1 rounded-md outline-none border"
+                className="md:w-80 w-72 px-3 py-1 rounded-md outline-none border"
                 {...register("email", { required: true })}
               />
               <br />
@@ -73,7 +74,7 @@ function Login() {
               <input
                 type="text"
                 placeholder="Enter Your Password"
-                className="w-80 px-3 py-1 rounded-md outline-none border"
+                className="md:w-80 w-72 px-3 py-1 rounded-md outline-none border"
                 {...register("password", { required: true })}
               />
               <br />
