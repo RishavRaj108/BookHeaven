@@ -37,8 +37,8 @@ function Signup() {
       });
   };
   return (
-    <div className="flex h-screen items-center justify-center container overflow-hidden">
-      <div className="w-[600px]">
+    <div className="flex h-screen items-center justify-center ">
+      <div className="w-screen flex items-center justify-center">
         <div className="modal-box">
           <form method="dialog" onSubmit={handleSubmit(onSubmit)}>
             {/* if there is a button in form, it will close the modal */}
@@ -56,7 +56,7 @@ function Signup() {
               <input
                 type="text"
                 placeholder="Enter Your Name"
-                className="w-80 px-3 py-1 rounded-md outline-none border"
+                className="md:w-80 w-72 px-3 py-1 rounded-md outline-none border"
                 {...register("fullname", { required: true })}
               />
 
@@ -74,7 +74,7 @@ function Signup() {
               <input
                 type="email"
                 placeholder="Enter Your Email"
-                className="w-80 px-3 py-1 rounded-md outline-none border"
+                className="md:w-80 w-72 px-3 py-1 rounded-md outline-none border"
                 {...register("email", { required: true })}
               />
 
@@ -92,7 +92,7 @@ function Signup() {
               <input
                 type="text"
                 placeholder="Enter Your Password"
-                className="w-80 px-3 py-1 rounded-md outline-none border"
+                className="md:w-80 w-72 px-3 py-1 rounded-md outline-none border"
                 {...register("password", { required: true })}
               />
 
@@ -129,3 +129,4 @@ function Signup() {
 }
 
 export default Signup;
+
