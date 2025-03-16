@@ -1,6 +1,6 @@
 import React from "react";
 import banner from "../../public/Banner.png";
-import book from "../../public/books.jpg"
+import book from "../../public/books.png"
 function Banner() {
   return (
     <>
@@ -30,7 +30,7 @@ function Banner() {
             </label>
           </div>
           <button className="btn mt-6 btn-secondary">Get Started</button>
-        </div>
+        </div>  
         <div className=" order-1 w-full mt-20 md:w-1/2">
           <img
             src={book}
