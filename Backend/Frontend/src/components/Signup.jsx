@@ -1,5 +1,11 @@
 import React from "react";
-import { Link, Navigate, replace, useLocation, useNavigate } from "react-router-dom";
+import {
+  Link,
+  Navigate,
+  replace,
+  useLocation,
+  useNavigate,
+} from "react-router-dom";
 import Login from "./Login";
 import { useForm } from "react-hook-form";
 import axios from "axios";
@@ -24,15 +30,15 @@ function Signup() {
       .then((res) => {
         console.log(res.data);
         if (res.data) {
-          toast.success('SignUp Successfull');
-          navigate(from , {replace:true});
+          toast.success("SignUp Successfull");
+          navigate(from, { replace: true });
         }
         localStorage.setItem("Users", JSON.stringify(res.data.user));
       })
       .catch((err) => {
-        if(err.response) {
+        if (err.response) {
           console.log(err);
-          toast.error("Error: "+ err.response.data.message);
+          toast.error("Error: " + err.response.data.message);
         }
       });
   };
@@ -105,12 +111,12 @@ function Signup() {
             </div>
             {/* Button */}
             <div className="flex mt-4 justify-around ">
-              <button className="bg-pink-500 text-white rounded-md px-3 py-1 hover:bg-pink-700 duration-200" >
+              <button className="bg-pink-500 text-white rounded-md px-3 py-1 hover:bg-pink-700 duration-200">
                 Signup
               </button>
               <p className="text-xl">
                 Have account?{"  "}
-                <button
+                {/* <button
                   className="underline text-blue-500 cursor-pointer "
                   onClick={() => {
                     document.getElementById("my_modal_3").showModal();
@@ -118,7 +124,13 @@ function Signup() {
                 >
                   Login
                 </button>{" "}
-                <Login />
+                <Login /> */}
+                <Link
+                  to={"/"}
+                  className="underline text-blue-500 cursor-pointer "
+                >
+                  Login
+                </Link>
               </p>
             </div>
           </form>
@@ -129,4 +141,3 @@ function Signup() {
 }
 
 export default Signup;
-

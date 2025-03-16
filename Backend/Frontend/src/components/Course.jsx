@@ -18,20 +18,14 @@ function Course() {
   },[])
   return (
     <>
-      <div className="max-w-screen-2xl container mx-auto md:px-20 px-4">
-        <div className="mt-28 items-center text-center justify-center">
+      <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 ">
+        <div className="mt-14 pt-3 items-center text-center justify-center">
           <h1 className="text-2xl md:text-4xl">
-            We're delighted to have you{" "}
-            <span className="text-pink-600">Here! :)</span>
+          🌟 Welcome to Our Exclusive 
+            <span className="text-pink-600">Learning Hub! 🚀</span>
           </h1>
           <p className="mt-12">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro,
-            assumenda? Repellendus, iste corrupti? Tempore laudantium
-            repellendus accusamus accusantium sed architecto odio, nisi expedita
-            quas quidem nesciunt debitis dolore non aspernatur praesentium
-            assumenda sint quibusdam, perspiciatis, explicabo sequi fugiat amet
-            animi eos aut. Nobis quisquam reiciendis sunt quis sed magnam
-            consequatur!
+          We’re thrilled to have you here! Our premium courses are designed to take your learning experience to the next level, offering expert-led content, in-depth lessons, and hands-on projects that help you master new skills with confidence. Whether you're looking to deepen your knowledge, build a strong portfolio, or advance your career, our paid courses provide structured guidance, real-world applications, and access to an exclusive learning community. With a well-crafted curriculum and personalized support, you’ll gain valuable insights that set you apart. Unlock your full potential and start your journey today!
           </p>
           <Link to={"/"}>
           <button className="bg-pink-500 text-white px-4 py-2 rounded-md hover:bg-pink-700 duration-300 mt-6">Back</button>
