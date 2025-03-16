@@ -19,7 +19,7 @@ function Course() {
   return (
     <>
       <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 ">
-        <div className="mt-20 pt-4 items-center text-center justify-center">
+        <div className="mt-16 pt-6 items-center text-center justify-center">
           <h1 className="text-2xl md:text-4xl">
           🌟 Welcome to Our Exclusive 
             <span className="text-pink-600">Learning Hub! 🚀</span>
