@@ -19,7 +19,7 @@ function Course() {
   return (
     <>
       <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 ">
-        <div className="mt-14 pt-3 items-center text-center justify-center">
+        <div className="mt-20 pt-4 items-center text-center justify-center">
           <h1 className="text-2xl md:text-4xl">
           🌟 Welcome to Our Exclusive 
             <span className="text-pink-600">Learning Hub! 🚀</span>
@@ -32,7 +32,7 @@ function Course() {
           </Link>
          
         </div>
-        <div className="mt-12 grid grid-col-1 md:grid-cols-4">
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-4">
             {
                 book.map((item) =>(
                     <Cards key={item.id} item={item}/>
