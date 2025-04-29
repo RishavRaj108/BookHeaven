@@ -72,7 +72,7 @@ function Login() {
               <span>Password</span>
               <br />
               <input
-                type="text"
+                type="password"
                 placeholder="Enter Your Password"
                 className="md:w-80 w-72 px-3 py-1 rounded-md outline-none border"
                 {...register("password", { required: true })}
